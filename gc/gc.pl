@@ -22,5 +22,5 @@ say $best_gc * 100, '%';
 
 sub gc {
     my $str = shift;
-    ($str =~ tr/GgCc/GgCc/) / length($str);
+    ($str =~ tr/GgCc/GgCc/) / length($str); # length of $str may not be right.
 }
